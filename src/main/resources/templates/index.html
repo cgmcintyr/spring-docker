@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello Spring Boot!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
+    th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}"
+    rel="stylesheet" media="screen" />
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+
+</head>
+<body>
+<p id="para">Hello Spring Boot!</p>
+<img src="../static/images/nasa.png" th:src="@{/images/nasa.png}" />
+<script>
+    $( document ).ready(function() {
+        console.log( "jquery!" );
+        $('#para').text('Hello Spring Boot with jQuery!');
+    });
+</script>
+</body>
+</html>
